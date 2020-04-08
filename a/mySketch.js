@@ -23,7 +23,7 @@ function setup() {
 	foodLocation();
 	soundFormats("mp3");
   c = loadSound("a.mp3");
-	snake.ai = new Ai();
+	//snake.ai = new Ai();
 }
 
 function foodLocation() {
@@ -42,7 +42,7 @@ function foodLocation() {
 }
 
 function keyPressed() {
-		/*if (keyCode === UP_ARROW && snake.ydir === 0) {
+		if (keyCode === UP_ARROW && snake.ydir === 0) {
 			snake.setDir(0, -1);
 		} else if (keyCode === RIGHT_ARROW && snake.xdir === 0) {
 			snake.setDir(1, 0);
@@ -50,7 +50,7 @@ function keyPressed() {
 			snake.setDir(-1, 0);
 		} else if (keyCode === DOWN_ARROW && snake.ydir === 0) {
 			snake.setDir(0, 1);
-		} else */
+		} else 
 	if (key === " ") {
 		snake.grow();
 	}
@@ -63,7 +63,7 @@ function draw() {
 	snake.show();
 	if (snake.endGame()) {
 		snake = new Snake();
-		snake.ai = new Ai();
+		//snake.ai = new Ai();
     foodLocation();
 	}
 	if (snake.eat(food)) {
@@ -82,5 +82,5 @@ function draw() {
   }
 	textSize(1);
 	text(snake.body.length, 1, 1);
-	snake.ai.run();
+	//snake.ai.run();
 }
