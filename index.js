@@ -10,13 +10,13 @@ app.get('/', (req, res) => {
 app.get('/a.mp3', (req, res) => {
   res.sendFile('/a.mp3', {root: __dirname });
 });
-app.get('/aidcraft/ai.js', (req, res) => {
+app.get('/aidcraft.tk/ai.js', (req, res) => {
   res.sendFile('/ai.js', {root: __dirname });
 });
-app.get('/aidcraft/mySketch.js', (req, res) => {
+app.get('/aidcraft.tk/mySketch.js', (req, res) => {
   res.sendFile('/mySketch.js', {root: __dirname });
 });
-app.get('/aidcraft/snake.js', (req, res) => {
+app.get('/aidcraft.tk/snake.js', (req, res) => {
   res.sendFile('/snake.js', {root: __dirname });
 });
 app.get('/repl', (req, res) => {
