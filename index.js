@@ -5,19 +5,19 @@ const app = express();
 
 
 app.get('/', (req, res) => {
-  res.sendFile('/a/index.html', {root: __dirname });
+  res.sendFile('/index.html', {root: __dirname });
 });
 app.get('/a.mp3', (req, res) => {
-  res.sendFile('/a/a.mp3', {root: __dirname });
+  res.sendFile('/a.mp3', {root: __dirname });
 });
-app.get('/ai.js', (req, res) => {
-  res.sendFile('/a/ai.js', {root: __dirname });
+app.get('/aidcraft/ai.js', (req, res) => {
+  res.sendFile('/ai.js', {root: __dirname });
 });
-app.get('/mySketch.js', (req, res) => {
-  res.sendFile('/a/mySketch.js', {root: __dirname });
+app.get('/aidcraft/mySketch.js', (req, res) => {
+  res.sendFile('/mySketch.js', {root: __dirname });
 });
-app.get('/snake.js', (req, res) => {
-  res.sendFile('/a/snake.js', {root: __dirname });
+app.get('/aidcraft/snake.js', (req, res) => {
+  res.sendFile('/snake.js', {root: __dirname });
 });
 app.get('/repl', (req, res) => {
   res.redirect("https://repl.it/@weeaiden102/aidcraft")
