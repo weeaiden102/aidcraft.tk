@@ -3,6 +3,7 @@ const express = require('express');
 
 const app = express();
 
+
 app.get('/', (req, res) => {
   res.sendFile('/a/index.html', {root: __dirname });
 });
@@ -22,7 +23,7 @@ app.get('/repl', (req, res) => {
   res.redirect("https://repl.it/@weeaiden102/aidcraft")
 });
 app.get("/*", (req, res) => {
-  res.send('<h1 style="color:red;">404 not found</h1>');
+  res.end("404  not found")
 });
 app.listen(3000, () => {
   console.log('server started');

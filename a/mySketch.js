@@ -6,9 +6,7 @@ let h;
 let c;
 w = 400 / rez;
 h = 400 / rez;
-window.onload = function() {
-  let context = new AudioContext();
-}
+
 
 function preload() {
 	soundFormats("mp3");
@@ -68,8 +66,7 @@ function draw() {
 	}
 	if (snake.eat(food)) {
 		foodLocation();
-    let context = new AudioContext();
-    context.resume()
+    
 		c.play();
 	}
 	fill(255, 0, 0);
