@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "this is my new website and on it is a ai for the clasic game snake",
   "main": "index.js",
-  "scripts": { "test": "node test/all.js" },
+  "scripts": { "test": "node test/index.js" },
   "keywords": [],
   "author": "aiden gursky",
   "license": "ISC",
